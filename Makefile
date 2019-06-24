@@ -38,7 +38,7 @@ MQ_IMAGE_DEVSERVER ?=mqadvanced-server-dev
 # MQ_TAG is the tag of the built MQ Advanced image & MQ Advanced for Developers image
 MQ_TAG ?=$(MQ_VERSION)-$(ARCH)
 # DOCKER is the Docker command to run.  Defaults to "podman" if it's available, otherwise "docker"
-DOCKER ?= $(shell type -p podman || echo docker)
+DOCKER ?= docker
 # MQ_PACKAGES specifies the MQ packages (.deb or .rpm) to install.  Defaults vary on base image.
 MQ_PACKAGES ?=MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesJava*.rpm MQSeriesJRE*.rpm MQSeriesGSKit*.rpm MQSeriesMsg*.rpm MQSeriesSamples*.rpm MQSeriesWeb*.rpm MQSeriesAMS-*.rpm
 # MQM_UID is the UID to use for the "mqm" user
