@@ -17,7 +17,7 @@
 # the command line
 ###############################################################################
 # MQ_VERSION is the fully qualified MQ version number to build
-MQ_VERSION ?= 9.1.2.0
+MQ_VERSION ?= 9.1.3.0
 # RELEASE shows what release of the container code has been built
 RELEASE ?= 3
 # MQ_ARCHIVE is the name of the file, under the downloads directory, from which MQ Advanced can
